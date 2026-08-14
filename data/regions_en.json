@@ -1,0 +1,63 @@
+[
+  {
+    "id": "north",
+    "name": "Northern Vietnam",
+    "shortName": "North",
+    "tagline": "Subtle flavors, refined tradition",
+    "description": "Northern Vietnamese cuisine is known for its subtle, balanced flavors and strong connection to tradition. Dishes often highlight fresh herbs, light broths, and carefully layered seasonings rather than heavy spice.",
+    "culture": "Hanoi and the Red River Delta have shaped a cuisine that values restraint, seasonality, and harmony. Traditional meals often feature clear broths, fresh herbs, and carefully balanced flavors.",
+    "flavorProfile": "Mild, savory, and aromatic. Northern dishes generally use less sugar and chili than Southern cuisine, with greater emphasis on natural flavors, umami, and fresh herbs.",
+    "commonIngredients": [
+      "Rice noodles",
+      "Fresh herbs",
+      "Fish sauce",
+      "Beef broth",
+      "Shallots",
+      "Ginger"
+    ],
+    "image": "assets/images/regions/mien_bac.png",
+    "featuredFoodIds": [
+      1
+    ]
+  },
+    {
+    "id": "central",
+    "name": "Central Cuisine",
+    "shortName": "Central",
+    "tagline": "Bold, spicy, and elegantly royal",
+    "description": "Central Vietnamese cuisine is famous for its bold, fiery flavors and vibrant culinary presentations. From the complex, artistic royal dishes of Hue to the rustic street foods of Quang Nam, it showcases incredible skill in masterfully balancing strong seasonings.",
+    "culture": "Shaped by a narrow coastal geography and the profound legacy of the Nguyen Dynasty, Central locals excel in displaying foods in exquisite, small portions while placing a high emphasis on authentic, deeply flavorful sensory experiences.",
+    "flavorProfile": "Intensely savory, salty, sharply spicy, and deeply complex. Central cooking relies heavily on locally fermented shrimp pastes (mam ruoc) and aromatic fresh chilis to create high-impact flavor profiles.",
+    "ingredients": [
+      "Fresh & powdered chili",
+      "Hue fermented shrimp paste",
+      "Lemongrass & shallots",
+      "Thick rice noodles",
+      "Dried squid & shrimp",
+      "Tra Que herbs"
+    ],
+    "image": "assets/images/regions/mien_trung.png",
+    "featuredFoodIds": [2, 3]
+  },
+  {
+    "id": "south",
+    "name": "Southern Cuisine",
+    "shortName": "South",
+    "tagline": "Vibrant, sweet, and naturally rustic",
+    "description": "Southern Vietnamese cuisine reflects the bountiful abundance of the Mekong Delta's endless waterways. Dishes lean toward a natural sweetness and rich creaminess, favoring simple, open-fire cooking styles that actively highlight the absolute freshness of local ingredients.",
+    "culture": "Influenced by historical frontier heritage and early cultural exchanges with Khmer and Chinese settlers, Southern dining embodies a highly welcoming, relaxed style. Raw wild greens, quick charcoal grilling, and communal countryside feasts are iconic.",
+    "flavorProfile": "Pronounced sweetness, rich creaminess, and sharp sweet-sour balances. Sweetness typically comes from pure palm sugar or fresh coconut water, perfectly paired with an immense variety of raw herbs picked straight from the fields.",
+    "ingredients": [
+      "Coconut cream",
+      "Palm sugar",
+      "Fermented fish paste",
+      "Fresh wild greens",
+      "Sour tamarind",
+      "Mekong river fish"
+    ],
+    "image": "assets/images/regions/mien_nam.png",
+    "featuredFoodIds": [4, 5]
+  }
+
+]
+

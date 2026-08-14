@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vietnam Food Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <!-- Hero slideshow -->
+  <section class="bg-green-900 text-white">
+    <div id="hero-slides">
+      <div class="hero-slide">
+        <img
+          src="assets/images/foods/pho-1.jpg"
+          alt="Pho"
+          class="hero-slide__img"
+        />
+        <div class="hero-slide__text">
+          <h1 class="text-4xl md:text-5xl font-bold mb-3">Vietnam Food Guide</h1>
+          <p class="mb-0 max-w-xl">Discover Vietnamese cuisine across three regions — North, Central, and South.</p>
+        </div>
+      </div>
+      <div class="hero-slide hidden">
+        <img
+          src="/assets/images/foods/bun_bo-1.jpg"
+          alt="Bun Bo Hue"
+          class="hero-slide__img"
+        />
+        <div class="hero-slide__text">
+          <h1 class="text-4xl md:text-5xl font-bold mb-3">Vietnam Food Guide</h1>
+          <p class="mb-0 max-w-xl">From Hue spice to Saigon street food — plan what to eat on your trip.</p>
+        </div>
+      </div>
+      <div class="hero-slide hidden">
+        <img
+          src="/assets/images/foods/banh_mi-1.jpg"
+          alt="Banh Mi"
+          class="hero-slide__img"
+        />
+        <div class="hero-slide__text">
+          <h1 class="text-4xl md:text-5xl font-bold mb-3">Vietnam Food Guide</h1>
+          <p class="mb-0 max-w-xl">Save favorites, explore by province, and build a food planner.</p>
+        </div>
+      </div>
+    </div>
+    <div class="px-6 py-4 flex flex-wrap gap-2">
+      <a href="#regions" class="btn btn--primary">Discover Vietnamese Cuisine</a>
+      <button type="button" id="slide-prev" class="btn btn--ghost text-black">Prev</button>
+      <button type="button" id="slide-next" class="btn btn--ghost text-black">Next</button>
+    </div>
+  </section>
+
+  <!-- 3 regions -->
+  <div id="regions" class="page grid md:grid-cols-3 gap-4">
+    <a class="block bg-white border border-gray-300 p-5" href="region-detail.html?region=north">
+      <h2 class="text-xl font-bold mb-2">Northern Vietnam</h2>
+      <p class="muted mb-3">Subtle flavors, refined tradition</p>
+      <span class="btn btn--ghost">Explore North</span>
+    </a>
+    <a class="block bg-white border border-gray-300 p-5" href="region-detail.html?region=central">
+      <h2 class="text-xl font-bold mb-2">Central Vietnam</h2>
+      <p class="muted mb-3">Bold spice, royal heritage</p>
+      <span class="btn btn--ghost">Explore Central</span>
+    </a>
+    <a class="block bg-white border border-gray-300 p-5" href="region-detail.html?region=south">
+      <h2 class="text-xl font-bold mb-2">Southern Vietnam</h2>
+      <p class="muted mb-3">Sweet, vibrant, abundant</p>
+      <span class="btn btn--ghost">Explore South</span>
+    </a>
+  </div>
+
+  <section class="page">
+    <h2 class="text-2xl font-bold mb-2">About Vietnamese cuisine</h2>
+    <p class="muted mb-4">Explore dishes by region, save favorites, and plan meals for your trip.</p>
+    <div class="flex flex-wrap gap-3">
+      <a href="explore.html" class="btn btn--primary">Search all foods</a>
+      <a href="planner.html" class="btn btn--ghost">Build a food plan</a>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+[
+  {
+    "id": "north",
+    "name": "Ẩm thực miền Bắc",
+    "shortName": "Miền Bắc",
+    "tagline": "Thanh nhẹ, tinh tế và đậm nét truyền thống",
+    "description": "Ẩm thực miền Bắc nổi bật với hương vị thanh nhẹ, hài hòa và sự gắn bó với những giá trị truyền thống. Các món ăn thường chú trọng nguyên liệu tươi, nước dùng trong, rau thơm và cách nêm nếm vừa phải thay vì sử dụng quá nhiều gia vị cay hoặc ngọt.",
+    "culture": "Hà Nội và vùng đồng bằng sông Hồng đã góp phần hình thành phong cách ẩm thực đề cao sự tiết chế, tính mùa vụ và sự hài hòa trong hương vị. Trong những bữa ăn truyền thống, các món nước trong, rau thơm và cách nêm nếm cân bằng thường giữ vai trò quan trọng.",
+    "flavorProfile": "Thanh nhẹ, đậm đà vừa phải và thơm. Các món ăn miền Bắc thường sử dụng ít đường và ớt hơn miền Nam, đồng thời chú trọng vị tự nhiên của nguyên liệu, vị umami và các loại rau thơm.",
+    "ingredients": [
+      "Bánh phở và các loại bún",
+      "Rau thơm",
+      "Nước mắm",
+      "Nước dùng xương bò",
+      "Hành tím",
+      "Gừng"
+    ],
+    "image": "assets/images/regions/mien_bac.png",
+    "featuredFoodIds": [
+      1
+    ]
+  },
+  {
+    "id": "central",
+    "name": "Ẩm thực miền Trung",
+    "shortName": "Miền Trung",
+    "tagline": "Đậm đà, cay nồng và tinh tế lối cung đình",
+    "description": "Ẩm thực miền Trung nổi tiếng với hương vị đậm đà, cay nồng và màu sắc rực rỡ độc đáo. Từ những món ăn cung đình Huế cầu kỳ cho đến những món ăn đường phố bình dị của Quảng Nam, ẩm thực nơi đây luôn thể hiện sự khéo léo trong cách chế biến và phối trộn gia vị mạnh mẽ.",
+    "culture": "Do địa hình dốc đặc thù nằm sát biển và chịu ảnh hưởng sâu sắc từ văn hóa cung đình triều Nguyễn cổ kính, người dân miền Trung rất chú trọng nghệ thuật bày biện món ăn thành các phần nhỏ tinh tế, đồng thời đề cao tính nguyên bản, mộc mạc nhưng sâu sắc trong từng món ăn.",
+    "flavorProfile": "Đậm đà, mặn mà, cay bùng nổ và có chiều sâu vị giác rõ rệt. Người miền Trung đặc biệt ưa chuộng các loại mắm cốt đặc sản (như mắm tôm chua, mắm ruốc) và các loại ớt tươi cay nồng để kích thích vị giác.",
+    "ingredients": [
+      "Ớt tươi và ớt bột",
+      "Mắm ruốc Huế",
+      "Sả và củ nén",
+      "Bún sợi to",
+      "Mực và tôm khô",
+      "Rau thơm Trà Quế"
+    ],
+    "image": "assets/images/regions/mien_trung.png",
+    "featuredFoodIds": [2, 3]
+  },
+  {
+    "id": "south",
+    "name": "Ẩm thực miền Nam",
+    "shortName": "Miền Nam",
+    "tagline": "Trù phú, ngọt ngào và phóng khoáng phương Nam",
+    "description": "Ẩm thực miền Nam mang đặc trưng của sự trù phú từ vùng sông nước hoang sơ và đồng bằng sông Cửu Long. Món ăn Nam Bộ thiên về vị ngọt ngào béo ngậy tự nhiên, cách chế biến vô cùng phóng khoáng, giản dị nhưng đậm đà, tận dụng tối đa nguồn sản vật thiên nhiên tươi sống.",
+    "culture": "Được định hình bởi nền văn hóa khẩn hoang và sự giao thoa văn hóa đa dạng với người Khmer, người Hoa, ẩm thực miền Nam mang phong cách cởi mở. Người dân chuộng cách ăn tươi nuốt sống, các món nướng trui mộc mạc và các bữa ăn gia đình miền quê thông thoáng.",
+    "flavorProfile": "Ngọt đậm, béo ngậy và chua cay rõ rệt. Vị ngọt thường đến từ đường thốt nốt nguyên chất hoặc nước dừa tươi béo ngậy, kết hợp với các loại rau sống phong phú thu hoạch trực tiếp ngoài đồng ruộng.",
+    "ingredients": [
+      "Nước cốt dừa",
+      "Đường thốt nốt",
+      "Mắm cá sặc/cá linh",
+      "Rau sống đồng quê",
+      "Me chua",
+      "Cá lóc đồng"
+    ],
+    "image": "assets/images/regions/mien_nam.png",
+    "featuredFoodIds": [4, 5]
+  }
+]

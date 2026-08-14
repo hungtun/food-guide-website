@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About & Contact · Vietnam Food Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="page">
+    <div class="page-hero">
+      <h1>About & Contact</h1>
+      <p>Vietnam Food Guide helps international travelers explore Vietnamese cuisine by region, save favorites, and plan meals.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-10">
+      <section class="space-y-4">
+        <h2 class="text-2xl">Purpose</h2>
+        <p class="muted">Introduce Vietnamese food culture across the North, Central, and South — with interactive tools built in HTML, Tailwind CSS, JavaScript, and JSON.</p>
+
+        <h2 class="text-2xl pt-4">Who it’s for</h2>
+        <p class="muted">Travelers who want practical dish guides, itineraries, and cultural context before or during a trip to Vietnam.</p>
+
+        <h2 class="text-2xl pt-4">Team</h2>
+        <p class="muted">Built as a coursework project (BTL TKW). Replace this section with your group members’ names and roles.</p>
+
+        <h2 class="text-2xl pt-4">Contact</h2>
+        <ul class="muted space-y-2">
+          <li>Email: <a class="underline" href="mailto:hello@vietnamfoodguide.example">hello@vietnamfoodguide.example</a></li>
+          <li>Facebook: <a class="underline" href="https://facebook.com/" target="_blank" rel="noopener">facebook.com/…</a></li>
+          <li>Instagram: <a class="underline" href="https://instagram.com/" target="_blank" rel="noopener">instagram.com/…</a></li>
+        </ul>
+
+        <p class="pt-2">
+          <a href="add-food.html" class="btn btn--ghost">Suggest a new food →</a>
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl mb-4">Send a message</h2>
+        <form class="form-stack" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" maxlength="500" required></textarea>
+            <p class="muted text-sm mt-1"><span id="msg-count">0</span>/500</p>
+          </div>
+          <p class="text-sm" id="contact-status" role="status"></p>
+          <button type="submit" class="btn btn--primary">Send</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

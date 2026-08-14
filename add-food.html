@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suggest a Food · Vietnam Food Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="page">
+    <div class="page-hero">
+      <h1>Suggest a New Food</h1>
+      <p>Submit a dish for review. Entries go to Google Sheets via Apps Script (Pending → Approved / Rejected).</p>
+    </div>
+
+    <form class="form-stack" id="add-food-form" novalidate>
+      <div class="form-field">
+        <label for="foodName">Food Name *</label>
+        <input id="foodName" name="foodName" required />
+      </div>
+      <div class="form-field">
+        <label for="vietnameseName">Vietnamese Name *</label>
+        <input id="vietnameseName" name="vietnameseName" required />
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="form-field">
+          <label for="province">Province *</label>
+          <input id="province" name="province" required />
+        </div>
+        <div class="form-field">
+          <label for="region">Region *</label>
+          <select id="region" name="region" required>
+            <option value="">Select…</option>
+            <option value="North">North</option>
+            <option value="Central">Central</option>
+            <option value="South">South</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="category">Category *</label>
+        <input id="category" name="category" placeholder="Noodle, Rice, Drink…" required />
+      </div>
+      <div class="form-field">
+        <label for="description">Description *</label>
+        <textarea id="description" name="description" required></textarea>
+        <p class="muted text-sm mt-1"><span id="desc-count">0</span> characters</p>
+      </div>
+      <div class="form-field">
+        <label for="ingredients">Ingredients</label>
+        <textarea id="ingredients" name="ingredients" placeholder="Comma-separated"></textarea>
+      </div>
+      <div class="form-field">
+        <label for="price">Price (VND range)</label>
+        <input id="price" name="price" placeholder="30000 - 60000" />
+      </div>
+      <div class="form-field">
+        <label for="image">Image URL</label>
+        <input id="image" name="image" type="url" placeholder="https://…" />
+      </div>
+
+      <p class="muted text-sm" id="form-message" role="status"></p>
+      <button type="submit" class="btn btn--primary" id="submit-btn">Submit Food</button>
+    </form>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/add-food.js"></script>
+</body>
+</html>
