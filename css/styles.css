@@ -1,9 +1,37 @@
 /* Simple shared styles — most layout uses Tailwind */
 
+@font-face {
+  font-family: "Akashi";
+  src: url("../assets/fonts/UTM-Akashi.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SeagullBold";
+  src: url("../assets/fonts/UTM\ SeagullBold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SeagullBoldItalic";
+  src: url("../assets/fonts/UTM\ SeagullBoldItalic.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Androgyne";
+  src: url("../assets/fonts/UTM-Androgyne.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Thunder";
+  src: url("../assets/fonts/SVN-A-Love-Of-Thunder.ttf") format("truetype");
+  font-style: normal;
+}
 body {
   margin: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f5f5f5;
+  font-family:"Thunder","Androgyne", "Akashi", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f24830;
   color: #222;
   line-height: 1.5;
 }
@@ -33,10 +61,13 @@ img {
 
 /* Header */
 .site-header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  background: #f24830;/*f24830  f68f3b*/
+  border-bottom: 1px solid #ffcd2f;
   padding: 12px 16px;
+  color:#ebe6d0;
+  font-size:larger;
 }
+
 
 .site-header__inner {
   max-width: 1100px;
@@ -84,6 +115,7 @@ img {
   padding: 24px 16px;
   background: #eee;
   border-top: 1px solid #ddd;
+  background: #f68f3b;
 }
 
 .site-footer__inner {
@@ -103,6 +135,7 @@ img {
   max-width: 1100px;
   margin: 0 auto;
   padding: 24px 16px;
+  background:#fcf2d5 ;
 }
 
 .page-hero {
@@ -1571,4 +1604,166 @@ Nút quay lạitrang explore
   background: #d9d0c0;
   color: #3f3a33;
   transform: translateX(-3px);
+}
+
+/* ==================
+contact
+================= */
+.contact-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.contact-icons a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #183957;
+  background: #f1f5f9;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.contact-icons a:hover {
+  transform: translateY(-3px);
+  background: #183957;
+  color: white;
+}
+
+.btn--ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 10px;
+  background-color: #6089da;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn--ghost:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.btn--ghost .arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.btn--ghost:hover .arrow {
+  transform: translateX(5px);
+}
+
+.btn--ghost:active {
+  transform: translateY(-1px);
+}
+
+/* ===============
+form
+==================== */
+/* Contact form */
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #183957;
+}
+.form-field label:has(+ input[required]),
+.form-field label:has(+ textarea[required]),
+.form-field label:has(+ select[required]) {
+  position: relative;
+}
+
+.form-field label:has(+ input[required])::after,
+.form-field label:has(+ textarea[required])::after,
+.form-field label:has(+ select[required])::after {
+  content: " *";
+  color: red;
+}
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  outline: none;
+  background: #fafafa;
+  color: #222;
+  font-family: inherit;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.form-field input {
+  height: 38px;
+}
+
+.form-field textarea {
+  min-height: 130px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #4285f4;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #aaa;
+}
+
+#msg-count {
+  color: #888;
+}
+
+#contact-status {
+  min-height: 18px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.form-stack .btn--primary {
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+    background-color: #6089da;
+}
+
+.form-stack .btn--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.form-stack .btn--primary:active {
+  transform: translateY(0);
+
 }

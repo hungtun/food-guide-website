@@ -146,7 +146,7 @@ async function initArticleDetail() {
       return;
     }
 
-    document.title = `${article.title} · Vietnam Food Guide`;
+    document.title = `${article.title} · Taste Vietnam`;
 
     // Phần gợi ý bài viết liên quan
     const relatedArticles = articles

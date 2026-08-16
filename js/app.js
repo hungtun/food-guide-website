@@ -62,13 +62,13 @@ function renderHeader(activeId) {
   }).join("");
 
   // Nhãn ngôn ngữ hiển thị: Nếu đang ở 'en' thì hiện nút chuyển sang 'VI', và ngược lại
-  const langLabel = lang === "en" ? "🇻🇳 VI" : "🇬🇧 EN";
+  const langLabel = lang === "en" ? "VI" : "EN";
   const ctaLabel = lang === "vi" ? "Gợi ý món ăn" : "Suggest Food";
 
   return `
     <header class="site-header">
       <div class="site-header__inner">
-        <a href="index.html" class="brand">Vietnam Food Guide</a>
+        <a href="index.html" class="brand">Taste Vietnam</a>
         <button type="button" class="nav-toggle" id="nav-toggle">Menu</button>
         <nav class="site-nav" id="site-nav">
           ${links}
@@ -97,7 +97,7 @@ function renderFooter() {
   return `
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <strong>Vietnam Food Guide</strong>
+        <strong>Taste Vietnam</strong>
         <p class="muted">${desc}</p>
         <div class="footer-links">
           <a href="explore.html">${exploreLabel}</a>
@@ -105,7 +105,7 @@ function renderFooter() {
           <a href="add-food.html">${ctaLabel}</a>
           <a href="about.html">${aboutLabel}</a>
         </div>
-        <p class="muted">&copy; ${new Date().getFullYear()} Vietnam Food Guide</p>
+        <p class="muted">&copy; ${new Date().getFullYear()} Taste Vietnam</p>
       </div>
     </footer>
   `;
@@ -211,19 +211,19 @@ function renderContentBlocks(blocks) {
     .map((block) => {
       switch (block.type) {
         case "paragraph":
-          return `<p class="mb-5 text-lg leading-relaxed text-gray-800">${block.text}</p>`;
+          return `<p class="mb-5 text-lg leading-relaxed text-gray-600">${block.text}</p>`;
           
         case "heading":
           return `<h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">${block.text}</h2>`;
           
         case "subheading":
-          return `<h3 class="text-xl font-semibold mt-6 mb-3 text-gray-800">${block.text}</h3>`;
+          return `<h3 class="text-xl font-semibold mt-6 mb-3 text-gray-700">${block.text}</h3>`;
           
         case "list":
           if (!Array.isArray(block.items)) return "";
           const isOrdered = block.style === "ordered";
           const tag = isOrdered ? "ol" : "ul";
-          const listClass = isOrdered ? "list-decimal pl-6 mb-5 text-lg space-y-1" : "list-disc pl-6 mb-5 text-lg space-y-1";
+          const listClass = isOrdered ? "list-decimal pl-6 mb-5 text-lg text-gray-600 space-y-1" : "list-disc pl-6 mb-5 text-lg text-gray-600 space-y-1";
           
           const listItems = block.items.map((item) => `<li>${item}</li>`).join("");
           return `<${tag} class="${listClass}">${listItems}</${tag}>`;

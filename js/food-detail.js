@@ -168,7 +168,7 @@ async function initFoodDetail() {
 
 
     document.title =
-      `${displayName} · Vietnam Food Guide`;
+      `${displayName} · Taste Vietnam`;
 
 
     addRecentlyViewed(food.id);

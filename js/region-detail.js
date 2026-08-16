@@ -15,7 +15,7 @@ async function initRegionDetail() {
       return;
     }
 
-    document.title = `${region.name} · Vietnam Food Guide`;
+    document.title = `${region.name} · Taste Vietnam`;
 
     const featured = foods.filter((f) =>
       region.featuredFoodIds.includes(f.id) ||
